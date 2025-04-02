@@ -4,7 +4,7 @@ div{
     background-color: orange;
 }
 
-p{
+p.clase1{
     color: orange;
 }
 
@@ -32,7 +32,7 @@ p{
     background-color: hsl(0, 100%, 50%);
 }
 
-*{
+*.clase1{
     color: green;
     font-weight:bolder;
 }
@@ -56,11 +56,11 @@ input:disabled{
     background-color: rgb(109, 91, 91);
 }
 
-p::first-line{
+p.clase1::first-line{
     color: blue;
 }
 
-p::first-letter{
+p.clase1::first-letter{
     color: red;
     font-size: 45px;
 }
@@ -73,4 +73,78 @@ p::first-letter{
 
 .padre p{
     color: red;
+}
+/*CLASE 2*/
+
+p#unico.foo{
+    color: red;
+}
+
+p#unico.foo.bar{
+    color: green;
+}
+
+p#unico.foo.bar.baz{
+    color: blue!important;
+}
+
+.main{
+    color: rebeccapurple;
+    border: 2px solid #ccc;
+    padding: 1em;
+}
+
+.special{
+    color: red;
+    font-weight: bold;
+}
+
+.rectangulo{
+    width: 450px;
+    height: 250px;
+    background-color: darkgoldenrod;
+}
+
+.caja{
+    width: 50%;
+    height: 250px;
+    background-color: rgb(15, 125,36);
+}
+
+.caja_interior{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 0, 0);
+}
+
+.caja_interior p{
+    font-size: 4rem;
+    color: white;
+}
+
+body{
+    margin: 0;
+}
+
+div.clase2{
+    width: 50vw;
+    height: 50vh;
+    background-color: purple;
+}
+
+div.Ejemplo2{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    /*padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;*/
+    padding: 25px;
+    /*border-left:12px solid green;
+    border-right: 12px solid green;
+    border-top: 12px solid green;
+    border-bottom: 12px dashed green;*/
+    border: 12px solid yellow;
+    margin: 25px;
 }
